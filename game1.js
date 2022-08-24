@@ -22,8 +22,6 @@ $(document).keypress(function() {
 $(".btn").click(function() {
     
     var userChosenColour = $(this).attr("id")
-    
-    playsound(userChosenColour)
 
     $("#" + userChosenColour).fadeOut(100).fadeIn(100);
 
