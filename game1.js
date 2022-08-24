@@ -25,7 +25,7 @@ $(".btn").click(function() {
     
     playsound(userChosenColour)
 
-    userClickedPattern.push(userChosenColour)
+    $("#" + userChosenColour).fadeOut(100).fadeIn(100);
 
     if(userClickedPattern[i] !== gamePattern[i]) {
         $("#level-title").text("Game Over. Press Any Key To Restart.");
