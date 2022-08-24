@@ -23,8 +23,6 @@ $(".btn").click(function() {
     
     var userChosenColour = $(this).attr("id")
 
-    $("#" + userChosenColour).fadeOut(100).fadeIn(100);
-
     if(userClickedPattern[i] !== gamePattern[i]) {
         $("#level-title").text("Game Over. Press Any Key To Restart.");
         started = false;
