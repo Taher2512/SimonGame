@@ -38,7 +38,9 @@ $(".btn").click(function() {
     i++;
 
     if(i-1 === gamePattern.length - 1){
-        setTimeout(gameSequence(), 500); 
+        setTimeoutfunction(){
+            gameSequence();
+        }, 500); 
     }
 
 })
